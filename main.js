@@ -6,15 +6,13 @@ const url = require('url');
 
 let win;
 
+
 function createWindow () {
   win = new BrowserWindow({width: 800, height: 600});
 
   // load the dist folder from Angular
-  win.loadURL(url.format({
-    pathname: path.join(__dirname, 'dist/index.html'),
-    protocol: 'file:',
-    slashes: true
-  }));
+  win.loadFile('dist/gurubot/index.html');
+
 
   // Open the DevTools optionally:
   // win.webContents.openDevTools()
