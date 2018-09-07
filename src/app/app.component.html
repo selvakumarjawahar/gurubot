@@ -1,20 +1,119 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 10%;
+    height: 450px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 90%;
+    background-color: #f1f1f1;
+    height: 450px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+/*
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.viewbox {
+  height: 220px;
+  width: 550px;
+  position: relative;
+  border: 2px solid #cdcdcd;
+  border-color: rgba(0,0,0,.14);
+  background-color: AliceBlue ;
+  font-size: 14px;
+}
+
+.typebox {
+  height: 150px;
+  width: 550px;
+  position: relative;
+  border: 2px solid #cdcdcd;
+  border-color: rgba(0,0,0,.14);
+  background-color: AliceBlue ;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to Gurukool</h2>
+
+<!--header>
+  <h2>Topics</h2>
+</header-->
+
+<section>
+  <nav>
+  </nav>
+  
+  <article>
+      <textarea class="viewbox" rows = 8 cols = 50 readonly>  </textarea>
+      <hr>
+      <textarea class="typebox" rows = 4 cols = 50 autofocus>  </textarea>
+  </article>
+</section>
+
+<footer>
+  <!--p>Footer</p-->
+</footer>
+
+</body>
+</html>

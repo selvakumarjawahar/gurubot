@@ -8,7 +8,7 @@ let win;
 
 
 function createWindow () {
-  win = new BrowserWindow({width: 800, height: 600});
+  win = new BrowserWindow({width: 700, height: 600});
 
   // load the dist folder from Angular
   win.loadFile('dist/gurubot/index.html');
